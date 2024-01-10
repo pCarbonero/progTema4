@@ -32,6 +32,7 @@ public class Ejercicio06 {
 			}
 		}
 
+		//cerramos el escaner
 		sc.close();
 	}
 
