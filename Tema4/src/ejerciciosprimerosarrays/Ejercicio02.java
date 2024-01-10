@@ -26,7 +26,7 @@ public class Ejercicio02 {
 		for(double numero : tabla) {
 			System.out.println(numero);
 		}
-		
+		// cerramos el escaner
 		sc.close();
 	}
 
