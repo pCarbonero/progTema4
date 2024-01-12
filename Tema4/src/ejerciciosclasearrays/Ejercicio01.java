@@ -3,7 +3,7 @@ package ejerciciosclasearrays;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class ejercicio01 {
+public class Ejercicio01 {
 
 	public static void main(String[] args) {
 		// Variable para lso dos números que pedimos al usuario
