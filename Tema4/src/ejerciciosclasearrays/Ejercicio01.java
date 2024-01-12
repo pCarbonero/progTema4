@@ -10,6 +10,8 @@ public class Ejercicio01 {
 		int n, m;
 		// Creamos el escaner
 		Scanner sc = new Scanner(System.in);
+		// creamos el array
+		int tabla[];
 		
 		//Pedimos el valro de n
 		System.out.println("Dime un valor para el tamaño de la tabla ");
@@ -22,8 +24,8 @@ public class Ejercicio01 {
 		m = sc.nextInt();	
 		
 		
-		// creamos array de tamaño n
-		int tabla[] = new int[n];
+		// le damos a la tabla el tamaño n
+		tabla = new int[n];
 		
 		// rellenamos la tabla con m
 		Arrays.fill(tabla, m);
