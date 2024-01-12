@@ -27,7 +27,7 @@ public class Ejercicio07 {
 		}
 
 		for (int i = 0; i < meses.length; i++) {
-			System.out.print(meses[i] + ":");
+			System.out.print(meses[i] + "    \t");
 			for (double j = 0; j < temperatura[i]; j++) {
 				// System.out.print("\t");
 				System.out.print("*");
