@@ -12,7 +12,7 @@ public class Ejercicio07 {
 		int win[] = new int[6];
 		// creamos el objeto de la clase random para generar los números
 		Random rd = new Random();
-		// 
+		// contador para los aciertos
 		int aciertos = 0;
 		
 		// bucle para la primera tabla
@@ -25,12 +25,24 @@ public class Ejercicio07 {
 			win[i] = rd.nextInt(1,50);
 		}
 		
-        for (int numero : bet) {
-            if (Arrays.binarySearch(win, numero) >= 0) {
+		for(int numero : bet) {
+           if (Arrays.binarySearch(win, numero) >= 0) {
                 aciertos++;
             }
-        }
-        
+			
+			/*for (int i = 0; i < win.length; i++) {
+				if (win[i] == numero) {
+					aciertos++;
+				}			
+			}// for i*/
+			
+		}// for each
+		
+
+		
+        // ordenamos las tablas
+        Arrays.sort(win);
+        Arrays.sort(bet);
         System.out.println(Arrays.toString(bet));
         System.out.println(Arrays.toString(win));
         System.out.println("Aciertos " + aciertos);
