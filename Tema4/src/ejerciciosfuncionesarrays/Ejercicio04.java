@@ -18,17 +18,18 @@ public class Ejercicio04 {
 
 	}
 	
+	// funcion que devuleve la posicion del indice
 	public static int buscar(int t[], int clave) {
-		int pos = 0;		
+		int pos = -1;		
 		
+		// bucle que comprueba si el valor de la tabla t es el valor buscado
 		for (int i = 0; i < t.length; i++) {
+			// si 
 			if (t[i] == clave) {
 				pos = t[i];
 			}			
 		}
-		if (pos == 0)
-			pos = -1;
-
+		// devuelve el valor de pos
 		return pos;	
 	}
 
