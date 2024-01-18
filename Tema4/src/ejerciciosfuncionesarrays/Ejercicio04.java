@@ -8,12 +8,10 @@ public class Ejercicio04 {
 		// array
 		int tabla[] = {1,2,3,4,5,6,7,8,9,10};
 		// numero a buscar
-		int num = 88;
+		int num = 44;
 		// res
 		int res = 0;
 		
-		// ordenamos tabla
-		Arrays.sort(tabla);
 		// funcion
 		res = buscar(tabla, num);
 		System.out.println(res);
@@ -21,11 +19,16 @@ public class Ejercicio04 {
 	}
 	
 	public static int buscar(int t[], int clave) {
-		int pos = -1;		
-		pos = Arrays.binarySearch(t, clave);	
-		if (pos<0) {
-			pos = -1;
+		int pos = 0;		
+		
+		for (int i = 0; i < t.length; i++) {
+			if (t[i] == clave) {
+				pos = t[i];
+			}			
 		}
+		if (pos == 0)
+			pos = -1;
+
 		return pos;	
 	}
 
