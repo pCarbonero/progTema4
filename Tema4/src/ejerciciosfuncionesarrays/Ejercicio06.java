@@ -11,6 +11,7 @@ public class Ejercicio06 {
 		int resultado[];
 		//
 		int num = 3; 
+				
 		
 		resultado = suma(tabla, num);
 
