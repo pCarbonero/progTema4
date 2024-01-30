@@ -7,8 +7,6 @@ public class Ejercicio02 {
 	public static void main(String[] args) {
 		// creamos la tabla para almacenar los alumnos y us calificaciones
 		int[][]notas = new int[4][5];		
-		// creamos tabla para almacenar las notas max, minias y media
-		int[][]medias = new int[3][4];
 		// variable para almacenar la nota
 		int nota;
 		// variable para almacenar la nota maxima, minima y media
@@ -38,6 +36,38 @@ public class Ejercicio02 {
 			System.out.println("");
 		}
 		
+		System.out.println("");
+		
+		// calculo de notaMax, min y media
+		for (int i = 0; i < notas.length; i++) {
+			
+			// inicializamos
+			notaMin = Integer.MAX_VALUE;
+			notaMax = Integer.MIN_VALUE;
+            notaMedia = 0;
+				
+			for (int j = 0; j < notas[i].length; j++) {
+				
+				// min
+				if (notas[i][j] <= notaMin) {
+					notaMin = notas[i][j];
+				}
+				// max
+				if (notas[i][j] >= notaMax) {
+					notaMax = notas[i][j];
+				}		
+				// media
+				notaMedia += notas[i][j];			
+			}// fin bucle J
+			notaMedia = notaMedia/notas[i].length;
+			
+			// imrpimimos
+			System.out.println("ALUMNO " + (i+1) + ": ");
+			System.out.println("Nota máxima: " + notaMax);
+			System.out.println("Nota mínima: " + notaMin);
+			System.out.println("Nota media: " + notaMedia);	
+			System.out.println("");
+		}// fin bucle i
 		
 	}// main
 }
