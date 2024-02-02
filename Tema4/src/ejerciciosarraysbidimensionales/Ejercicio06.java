@@ -53,8 +53,8 @@ public class Ejercicio06 {
 		}// fin bucle
 		
 		
-		maxAndMin[0]= max;
-		maxAndMin[1]= min;
+		maxAndMin[0]= min;
+		maxAndMin[1]= max;
 		
 		return maxAndMin;
 		}
