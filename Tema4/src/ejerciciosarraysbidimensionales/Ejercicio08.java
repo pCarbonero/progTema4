@@ -4,12 +4,17 @@ public class Ejercicio08 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int[][] 
-		if(buscaSimetria(null)) {
+		int[][] tabla = {
+			    {1, 2, 3},
+			    {2, 4, 5},
+			    {3, 5, 6}
+			};
+				
+		if(buscaSimetria(tabla)) {
 			System.out.println("Es simétrica ");
 		}
 		else {
-			System.out.println();
+			System.out.println("No es simétrica ");
 		}
 
 	}// fin main
