@@ -18,16 +18,7 @@ public class Ejercicio06 {
 			}
 		}
 		
-		/*// imrpimimos el resultado
-		for (int i = 0; i < tabla.length; i++) {
-			for (int j = 0; j < tabla[i].length; j++) {
-				System.out.print(tabla[i][j] + "\t");
-			} // fin bucle i
-			System.out.println(" ");
-		} // fin bucle j*/
-		
-		//maxAndMin(tabla);	
-		
+		// llamamos a la funcion e imprimimos el array para mostrar el resultado
 		System.out.println(Arrays.toString(maxAndMin(tabla)));
 
 	}// fin main
@@ -52,7 +43,7 @@ public class Ejercicio06 {
 			}
 		}// fin bucle
 		
-		
+		// igualamos cada indice al valor correspondiente
 		maxAndMin[0]= min;
 		maxAndMin[1]= max;
 		

@@ -9,11 +9,12 @@ public class Ejercicio09 {
                 {7, 8, 9}
         };
        
+        // llamamos a la funcion e igualamos tabklaRotada a la tablaque devuelve
         int[][] tablaRotada = gira90(tablaInicio);
 
 
         
-        
+        // bucle para mostrar la tabla
         for (int[] fila : tablaRotada) {
             for (int elemento : fila) {
                 System.out.print(elemento + " ");

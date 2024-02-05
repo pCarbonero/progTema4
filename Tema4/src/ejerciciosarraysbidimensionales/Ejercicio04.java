@@ -24,7 +24,9 @@ public class Ejercicio04 {
 	static int[][] tablasDeMultiplicar(int[][] tabla) {
 		// int[][] tablaMultiplicar = new int[10][10];
 
+		// bucle para rellenar la tabla
 		for (int i = 0; i < tabla.length; i++) {
+			// bucle que rellena cada fila con cada multiplidcacion
 			for (int j = 0; j < tabla[i].length; j++) {
 				tabla[i][j] = (i+1) * (j+1);
 			}
