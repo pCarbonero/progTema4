@@ -13,7 +13,6 @@ public class Ejercicio01 {
 		if (frase1.length() != frase2.length()) {
 			// si no son igual de larags utilizamos un ternario para comprobar cual es mas larga
 			res = (frase1.length() > frase2.length()) ? "La primera es más larga":"La segunda es más larga";
-			System.out.println(res);
 		}
 		// imrpimimos el resultado
 		System.out.println(res);
