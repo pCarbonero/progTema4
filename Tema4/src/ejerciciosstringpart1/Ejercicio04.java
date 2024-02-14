@@ -24,7 +24,12 @@ public class Ejercicio04 {
 		Arrays.sort(palabras);
 		
 		// imrpimimos el array ordenado
-		System.out.println(Arrays.toString(palabras));
+		//System.out.println(Arrays.toString(palabras));
+		
+		// bucle for para imprimir cada palabra
+		for (int i = 0; i < palabras.length; i++) {
+			System.out.print(palabras[i] + " ");
+		}
 		
 		// cerramos el escaner
 		sc.close();
