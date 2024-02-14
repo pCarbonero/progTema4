@@ -25,7 +25,6 @@ public class Ejercicio04 {
 		
 		// imrpimimos el array ordenado
 		System.out.println(Arrays.toString(palabras));
-
 	}
 
 }
