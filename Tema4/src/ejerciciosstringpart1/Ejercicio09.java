@@ -13,7 +13,7 @@ public class Ejercicio09 {
 		String fraseTraducida = "";
 		
 		//llamamos la funcion
-		fraseTraducida = traductor(fraseJava2);
+		fraseTraducida = traductor(fraseJava1);
 		
 		// imrpimimos el resutado
 		System.out.println(fraseTraducida);
@@ -32,13 +32,13 @@ public class Ejercicio09 {
 		final String SUFIJO = "javalén, len, len"; //|| frase.contains("javalén, len, len")
 		
 		// comprobamso si la frase tiene el prefijo o sufijo del idioma
-		if (frase.contains(PREFIJO)) {
+		if (frase.startsWith(PREFIJO)) {
 			// si lo tiene se sustituye esa parte por espacios
-			fraseTraducida = frase.replace(PREFIJO, " ");
+			fraseTraducida = frase.replace(PREFIJO, "");
 		}
-		else if (frase.contains(SUFIJO)) {
+		else if (frase.endsWith(SUFIJO)) {
 			// si lo tiene se sustituye esa parte por espacios
-			fraseTraducida = frase.replace(SUFIJO, " ");
+			fraseTraducida = frase.replace(SUFIJO, "");
 		}
 		
 		// La frase con lso espacios utilizamos  trim para dejar la frase normal
