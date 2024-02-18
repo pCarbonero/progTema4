@@ -1,5 +1,6 @@
 package ejerciciosstringpart1;
 
+import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -19,7 +20,7 @@ public class Ejercicio15 {
 
 		anagrama = desordena(palabra);
 		System.out.println(anagrama);
-		
+
 		sc.close();
 
 	}
@@ -28,26 +29,27 @@ public class Ejercicio15 {
 		String anagrama = "";
 		// Convertir el texto a un array de caracteres
 		char[] caracteres = palabra.toCharArray();
-		// 
+		//
 		int indiceAleatorio;
 		//
-		char temporal;
-		//
-		char[] otro = new char[caracteres.length];
-		// 
 		Random rand = new Random();
-		
+		//
+		char[] caracteres2 = new char[caracteres.length];
+
 		//
 		for (int i = 0; i < caracteres.length; i++) {
 			indiceAleatorio = rand.nextInt(i + 1);
 
-			// Intercambiar los caracteres en las posiciones i e indiceAleatorio
-			otro[i] = caracteres[indiceAleatorio];
+			if(caracteres[indiceAleatorio] != ' ') {
+				caracteres2[i] = caracteres[indiceAleatorio];
+				caracteres[indiceAleatorio] = ' ';
+				System.out.println(caracteres[indiceAleatorio]);
+			}
 
-			anagrama += otro[i];
+
 		}
-		
 
+		anagrama = anagrama.valueOf(caracteres2);
 		// Convertir el array de nuevo a un String
 		return anagrama;
 	}
